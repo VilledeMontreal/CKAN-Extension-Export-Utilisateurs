@@ -1,0 +1,4 @@
+*.pyc
+.ropeproject
+*.swp
+ckanext_export_users.egg-info/

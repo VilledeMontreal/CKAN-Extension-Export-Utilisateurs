@@ -1,0 +1,18 @@
+{% extends "page.html" %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Export users'), controller='ckanext.export_users.plugin:ExportUsersController', action='export_users_page' %}</li>
+{% endblock %}
+
+
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      <h1 class="page-heading">{{ _('Export Users') }}</h1>
+      {% link_for _('Export in csv'), controller='ckanext.export_users.plugin:ExportUsersController', action='export_users_csv', class_="btn btn-primary", icon="plus-sign-alt" %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
